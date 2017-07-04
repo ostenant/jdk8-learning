@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+    <name>jdk8-learning</name>
+    <url>http://maven.apache.org</url>
+    <packaging>pom</packaging>
+    
+    <groupId>org.ostenant.jdk8.learning.examples</groupId>
+    <artifactId>jdk8-learning</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    
+     <properties>
+	   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	 </properties>
+
+	<modules>
+		<!-- JDK1.8 字符串处理API -->
+		<module>jdk8-charsequence-api</module>
+		<!-- JDK1.8 default method声明使用 -->
+		<module>jdk8-default-method</module>
+		<!-- JDK1.8  函数接口使用 -->
+		<module>jdk8-functional-interfaces</module>
+		<!-- JDK1.8 lambda表达式使用 -->
+		<module>jdk8-lambda-expressions</module>
+		<!-- JDK1.8  字符串处理API -->
+		<module>jdk8-方法引用</module>
+		<!-- JDK1.8  重复注解声明 -->
+		<module>jdk8-repeatable-annotations</module>
+		<!-- JDK1.8  变量引用 -->
+		<module>jdk8-variables-reference</module>
+	</modules>
+	
+	<dependencies>
+		<dependency>
+		    <groupId>junit</groupId>
+		    <artifactId>junit</artifactId>
+		    <version>4.12</version>
+		    <scope>test</scope>
+		</dependency>		
+	</dependencies>
+</project>
