@@ -30,6 +30,8 @@
 		<module>jdk8-repeatable-annotations</module>
 		<!-- JDK1.8  变量引用 -->
 		<module>jdk8-variables-reference</module>
+		<!-- JDK1.8 JVM相关的测试 -->
+		<module>jdk8-jvm-sequences</module>
 	</modules>
 	
 	<dependencies>
