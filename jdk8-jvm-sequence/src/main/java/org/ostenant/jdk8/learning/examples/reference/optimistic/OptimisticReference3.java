@@ -12,7 +12,7 @@ public class OptimisticReference3 {
 	}
 
 	public static void main(String[] args) {
-		Child.name = "My SON";
+		Child.name = "Child";
 	}
 
 }

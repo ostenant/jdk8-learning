@@ -8,7 +8,7 @@ public class OptimisticReference2 {
 
 		static {
 			System.out.println(Child.class.getSimpleName() + " is referred!");
-			name = "My SON";
+			name = "Child";
 		}
 	}
 
