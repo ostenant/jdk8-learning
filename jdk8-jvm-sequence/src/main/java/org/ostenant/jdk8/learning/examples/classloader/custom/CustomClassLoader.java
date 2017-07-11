@@ -14,7 +14,6 @@ import java.io.IOException;
  *       <b>Date:</b> 2017年7月10日 下午3:06:31
  */
 public class CustomClassLoader extends ClassLoader {
-
 	private String classPath;
 
 	public CustomClassLoader(String classPath) {
@@ -51,7 +50,5 @@ public class CustomClassLoader extends ClassLoader {
 			e.printStackTrace();
 		}
 		return null;
-
 	}
-
 }
