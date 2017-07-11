@@ -1,4 +1,4 @@
-package org.ostenant.jdk8.learning.examples.classloader;
+package org.ostenant.jdk8.learning.examples.classloader.app;
 
 import org.junit.Test;
 

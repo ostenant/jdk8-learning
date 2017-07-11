@@ -1,4 +1,4 @@
-package org.ostenant.jdk8.learning.examples.classloader;
+package org.ostenant.jdk8.learning.examples.classloader.app;
 
 public class Children extends Parent {
 	static {
@@ -16,7 +16,7 @@ public class Children extends Parent {
 		System.out.println("Step f: Children instance：" + instanceID + ", constructor is invoked");
 	}
 
-	public void cry() {
+	public void say() {
 		System.out.println("My first class loader...");
 	}
 }

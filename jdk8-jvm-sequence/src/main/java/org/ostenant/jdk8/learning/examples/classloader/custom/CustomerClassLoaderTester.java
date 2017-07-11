@@ -1,4 +1,4 @@
-package org.ostenant.jdk8.learning.examples.classloader;
+package org.ostenant.jdk8.learning.examples.classloader.custom;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -22,7 +22,7 @@ import org.junit.Test;
 
 public class CustomerClassLoaderTester {
 
-	private static final String SOURCE_CODE_LOCATION = "E://eclipse-learning-workspace//jdk8-learning//jdk8-jvm-sequence//src//main//java//org//ostenant//jdk8//learning//examples//classloader//";
+	private static final String SOURCE_CODE_LOCATION = "E://eclipse-learning-workspace//jdk8-learning//jdk8-jvm-sequence//src//main//java//org//ostenant//jdk8//learning//examples//classloader//custom//";
 
 	private static final String CHILDREN_SOURCE_CODE_NAME = SOURCE_CODE_LOCATION + "Children.java";
 	private static final String PARENT_SOURCE_CODE_NAME = SOURCE_CODE_LOCATION + "Parent.java";
@@ -141,11 +141,11 @@ public class CustomerClassLoaderTester {
 		// 创建自定义类加载器
 		CustomClassLoader classLoader = new CustomClassLoader(TARGET_CODE_LOCALTION);
 		// 动态加载class文件到内存中（无连接）
-		Class<?> c = classLoader.loadClass("org.ostenant.jdk8.learning.examples.classloader.Children");
+		Class<?> c = classLoader.loadClass("org.ostenant.jdk8.learning.examples.classloader.custom.Children");
 		// 通过反射拿到所有的方法
 		Method[] declaredMethods = c.getDeclaredMethods();
 		for (Method method : declaredMethods) {
-			if ("cry".equals(method.getName())) {
+			if ("say".equals(method.getName())) {
 				// 通过反射拿到children对象
 				Object children = c.newInstance();
 				method.invoke(children);

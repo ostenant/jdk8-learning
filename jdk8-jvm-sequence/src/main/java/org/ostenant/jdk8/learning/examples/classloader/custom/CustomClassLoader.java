@@ -1,4 +1,4 @@
-package org.ostenant.jdk8.learning.examples.classloader;
+package org.ostenant.jdk8.learning.examples.classloader.custom;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -23,7 +23,7 @@ public class CustomClassLoader extends ClassLoader {
 
 	@Override
 	protected Class<?> findClass(String name) throws ClassNotFoundException {
-		Class<?> c = findLoadedClass(name);
+		Class<?> c = findLoadedClass(name); // 可省略
 		if (c == null) {
 			byte[] data = loadClassData(name);
 			if (data == null) {
@@ -37,7 +37,7 @@ public class CustomClassLoader extends ClassLoader {
 	protected byte[] loadClassData(String name) {
 		try {
 			// package -> file folder
-			name.replaceAll(".", "//");
+			name = name.replace(".", "//");
 			FileInputStream fis = new FileInputStream(new File(classPath + "//" + name + ".class"));
 			ByteArrayOutputStream baos = new ByteArrayOutputStream();
 			int len = -1;
