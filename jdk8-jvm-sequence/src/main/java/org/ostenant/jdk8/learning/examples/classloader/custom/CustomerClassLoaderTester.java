@@ -148,11 +148,11 @@ public class CustomerClassLoaderTester {
 			if ("say".equals(method.getName())) {
 				// 通过反射拿到children对象
 				Object children = c.newInstance();
+				// 调用children的say()方法
 				method.invoke(children);
 				break;
 			}
 		}
-
 	}
 
 }
