@@ -11,7 +11,7 @@ package org.ostenant.jdk8.learning.examples.reference.negative;
 public class NegativeReference0 {
 
 	public static class Parent {
-		public static String name = "Father";
+		public static String name = "Parent";
 		static {
 			System.out.println(Parent.class.getSimpleName() + " is referred!");
 		}

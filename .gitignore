@@ -3,6 +3,8 @@
 .classpath
 .settings
 .springBeans
+.iml
+.idea
 
 target
 bin

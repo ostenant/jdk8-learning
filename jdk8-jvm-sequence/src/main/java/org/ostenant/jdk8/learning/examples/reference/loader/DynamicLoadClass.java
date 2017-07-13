@@ -1,5 +1,6 @@
 package org.ostenant.jdk8.learning.examples.reference.loader;
 
+
 import org.junit.Test;
 
 public class DynamicLoadClass {

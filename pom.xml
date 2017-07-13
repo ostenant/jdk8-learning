@@ -25,13 +25,13 @@
 		<!-- JDK1.8 lambda表达式使用 -->
 		<module>jdk8-lambda-expressions</module>
 		<!-- JDK1.8  字符串处理API -->
-		<module>jdk8-方法引用</module>
+		<module>jdk8-method-references</module>
 		<!-- JDK1.8  重复注解声明 -->
 		<module>jdk8-repeatable-annotations</module>
 		<!-- JDK1.8  变量引用 -->
 		<module>jdk8-variables-reference</module>
 		<!-- JDK1.8 JVM相关的测试 -->
-		<module>jdk8-jvm-sequences</module>
+		<module>jdk8-jvm-sequence</module>
 	</modules>
 	
 	<dependencies>
@@ -40,6 +40,6 @@
 		    <artifactId>junit</artifactId>
 		    <version>4.12</version>
 		    <scope>test</scope>
-		</dependency>		
+		</dependency>
 	</dependencies>
 </project>

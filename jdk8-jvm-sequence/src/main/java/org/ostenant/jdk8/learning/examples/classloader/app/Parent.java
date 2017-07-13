@@ -22,9 +22,4 @@ public class Parent {
 	public Parent() {
 		System.out.println("Step d: Parent instance：" + instanceID + ", constructor is invoked");
 	}
-
-	public void say() {
-		System.out.println("My first class loader...");
-	}
-
 }

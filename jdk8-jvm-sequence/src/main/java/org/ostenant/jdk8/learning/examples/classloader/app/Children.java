@@ -15,8 +15,4 @@ public class Children extends Parent {
 	public Children() {
 		System.out.println("Step f: Children instance：" + instanceID + ", constructor is invoked");
 	}
-
-	public void say() {
-		System.out.println("My first class loader...");
-	}
 }

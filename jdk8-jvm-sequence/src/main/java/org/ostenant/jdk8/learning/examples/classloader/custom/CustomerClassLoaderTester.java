@@ -1,5 +1,7 @@
 package org.ostenant.jdk8.learning.examples.classloader.custom;
 
+import org.junit.Test;
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -18,7 +20,6 @@ import javax.tools.JavaFileObject;
 import javax.tools.StandardJavaFileManager;
 import javax.tools.ToolProvider;
 
-import org.junit.Test;
 
 public class CustomerClassLoaderTester {
 
@@ -46,7 +47,7 @@ public class CustomerClassLoaderTester {
 	/**
 	 * 拷贝源文件到目标目录
 	 * 
-	 * @param 源文件
+	 * @param f 源文件
 	 * @return
 	 */
 	protected static File copySourceFile(File f) {
@@ -115,8 +116,6 @@ public class CustomerClassLoaderTester {
 	 * 
 	 * @param f
 	 *            类源文件的文件路径
-	 * @param specifiedName
-	 *            类的全路径
 	 * @return
 	 */
 	protected static void compileSourceFile(File f) {
